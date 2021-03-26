@@ -9,9 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Document(collection = "Cards")
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Card {
@@ -42,10 +44,13 @@ public class Card {
 	private boolean transformation;
 	
 	@Field("super_atk")
-	private SuperAtk superAtk; 
+	private List<SuperAtk> superAtk; 
 	
 	@Field("passive_skill")
 	private PassiveSkill passive_skill;
+	
+	@Field("active_skill")
+	private PassiveSkill active_skill;
 	
 	@Field("link_skill")
 	private List<String> linkSkills;
@@ -54,9 +59,9 @@ public class Card {
 	private List<String> categories;
 	
 	public String toString() {
-		return "Card [name=" + name + ", Rarity=" + rarity + ", type=" + type + ", color=" + color
+		return "Card [name=" + name + ", rarity=" + rarity + ", type=" + type + ", color=" + color
 				+ ", leader_skill=" + leader_skill + ", transformation_condition=" + transformation_condition
-				+ ", transformation=" + transformation + ", superAtk=" + superAtk + ", passiveSkill=" + passive_skill
+				+ ", transformation=" + transformation + ", superAtk=" + superAtk + ", passive_skill=" + passive_skill + ", active_skill=" + active_skill
 				+ ", linkSkills=" + linkSkills + ", categories=" + categories + "]";
 	}
 }

@@ -16,5 +16,4 @@ public class SuperAtk {
 	public String toString() {
 		return "SuperAtk [name=" + name + ", effect=" + effect + "]";
 	}
-	
 }
