@@ -12,6 +12,7 @@ public class SuperAtk {
 	private String name;
 	private String effect;
 	
+	
 	@Override
 	public String toString() {
 		return "SuperAtk [name=" + name + ", effect=" + effect + "]";

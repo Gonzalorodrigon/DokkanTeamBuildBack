@@ -44,7 +44,7 @@ public class Card {
 	private boolean transformation;
 	
 	@Field("super_atk")
-	private List<SuperAtk> superAtk; 
+	private List<SuperAtk> super_atk; 
 	
 	@Field("passive_skill")
 	private PassiveSkill passive_skill;
@@ -53,7 +53,7 @@ public class Card {
 	private PassiveSkill active_skill;
 	
 	@Field("link_skill")
-	private List<String> linkSkills;
+	private List<String> link_Skill;
 	
 	@Field("category")
 	private List<String> categories;
@@ -61,7 +61,7 @@ public class Card {
 	public String toString() {
 		return "Card [name=" + name + ", rarity=" + rarity + ", type=" + type + ", color=" + color
 				+ ", leader_skill=" + leader_skill + ", transformation_condition=" + transformation_condition
-				+ ", transformation=" + transformation + ", superAtk=" + superAtk + ", passive_skill=" + passive_skill + ", active_skill=" + active_skill
-				+ ", linkSkills=" + linkSkills + ", categories=" + categories + "]";
+				+ ", transformation=" + transformation + ", super_atk=" + super_atk + ", passive_skill=" + passive_skill + ", active_skill=" + active_skill
+				+ ", link_Skill=" + link_Skill + ", categories=" + categories + "]";
 	}
 }
